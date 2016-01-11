@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+
+<!-- Blohm and Voss BV138: Seedrache.
+Peter Brendt, Jabberwocky, 2015
+Israel Hernandez, IAHM-COL, 2015
+-->
+
+<PropertyList include="Aircraft/JPack/Interface.xml">
+
+  <sim>
+    <description>Blomh and Voss BV 138MS - Seedrache</description>
+    <author>Peter Brendt, Jabberwocky</author>
+    <author>Israel Hernandez, IAHM-COL</author>
+
+    <aircraft-version>V03.00.00</aircraft-version>
+    <status>Alpha</status>
+    <rating>
+      <!--only  a generic wrong estimation since given by the author himself-->
+      <FDM type="int">0</FDM>
+      <systems type="int">0</systems>
+      <model type="int">0</model>
+      <cockpit type="int">0</cockpit>
+    </rating>
+
+    <flight-model>jsb</flight-model>
+    <aero>Aero/BV138MS</aero>
+
+    <!-- Splash screen while loading -->
+    <startup>
+      <splash-texture>Aircraft/Seedrache-JSB/USATour-BV138MS.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Seedrache-JSB/Models/BV138MS.xml</path>
+      <waterloading>0</waterloading>
+      <bomb-signal>0</bomb-signal>
+    </model>
+
+    <!-- basic startup settings for sim -->
+    <freeze>
+      <fuel>false</fuel>	<!-- false is default -->
+    </freeze>
+
+    <gui>
+      <dialogs>
+	<autopilot>
+	  <kts-select type="bool">true</kts-select>
+	  <mach-select tpye="bool">false</mach-select>
+	</autopilot>
+      </dialogs>
+    </gui>
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+    
+    <sound>
+      <path>Aircraft/Seedrache-JSB/Sounds/sound.xml</path>
+    </sound>
+
+    <autostart>
+      <started>0</started>
+    </autostart>
+
+    <!-- All the views (crew stations + 1 more to allow moving around + extras liek Tail Camera) -->
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+	<!-- x/y/z == right/up/back -->
+	<x-offset-m archive="y">-0.48</x-offset-m>
+	<y-offset-m archive="y">0.51</y-offset-m>
+	<z-offset-m archive="y">-3.78</z-offset-m>
+	<pitch-offset-deg archive="y">-18.0</pitch-offset-deg>
+	<default-field-of-view-deg type="double">88.0</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <current-view>
+      <field-of-view type="double">65.0</field-of-view>
+    </current-view>
+
+    <view n="100">
+      <name>Cockpit View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+	<default-field-of-view-deg type="double">75.0</default-field-of-view-deg>
+	<default-pitch-deg type="double">0</default-pitch-deg>
+	<default-heading-deg type="double">0</default-heading-deg>
+	<front-direction-deg type="double">0</front-direction-deg>
+	<front-left-direction-deg type="double">45</front-left-direction-deg>
+	<left-direction-deg type="double">90</left-direction-deg>
+	<back-left-direction-deg type="double">135</back-left-direction-deg>
+	<back-direction-deg type="double">180</back-direction-deg>
+	<back-right-direction-deg type="double">225</back-right-direction-deg>
+	<right-direction-deg type="double">270</right-direction-deg>
+	<front-right-direction-deg type="double">315</front-right-direction-deg>
+	<x-offset-m archive="y">0.0</x-offset-m>
+	<y-offset-m archive="y">1.100</y-offset-m>
+	<z-offset-m archive="y">0.036</z-offset-m>
+	<pitch-offset-deg>0</pitch-offset-deg>
+      </config>
+    </view>
+
+    <view n="101">
+      <name>Cockpit View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+	<default-field-of-view-deg type="double">75.0</default-field-of-view-deg>
+	<default-pitch-deg type="double">0</default-pitch-deg>
+	<default-heading-deg type="double">270</default-heading-deg>
+	<front-direction-deg type="double">0</front-direction-deg>
+	<front-left-direction-deg type="double">45</front-left-direction-deg>
+	<left-direction-deg type="double">90</left-direction-deg>
+	<back-left-direction-deg type="double">135</back-left-direction-deg>
+	<back-direction-deg type="double">180</back-direction-deg>
+	<back-right-direction-deg type="double">225</back-right-direction-deg>
+	<right-direction-deg type="double">270</right-direction-deg>
+	<front-right-direction-deg type="double">315</front-right-direction-deg>
+	<x-offset-m archive="y">-1.0</x-offset-m>
+	<y-offset-m archive="y">0.60</y-offset-m>
+	<z-offset-m archive="y">4.9</z-offset-m>
+	<pitch-offset-deg>0</pitch-offset-deg>
+      </config>
+    </view>
+  </sim>
+
+  <engines>
+    <engine n="0">
+      <mp-inhg>0</mp-inhg>
+      <rpm>0</rpm>
+    </engine>
+    <engine n="1">
+      <mp-inhg>0</mp-inhg>
+      <rpm>0</rpm>
+    </engine>
+    <engine n="2">
+      <mp-inhg>0</mp-inhg>
+      <rpm>0</rpm>
+    </engine>
+  </engines>
+  
+  <autopilot>
+    <settings>
+      <kts-mach-select type="string">kts</kts-mach-select>
+      <max-pitch type="float"> 4.0</max-pitch>
+      <min-pitch type="float">-3.0</min-pitch>
+      <bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
+    </settings>
+    <internal>
+      <target-pitch-deg type="float">0.00</target-pitch-deg>
+      <max-pitch type="float"> 4.0</max-pitch>
+      <min-pitch type="float">-3.0</min-pitch>
+    </internal>
+  </autopilot>
+  
+</PropertyList>
