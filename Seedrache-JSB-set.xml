@@ -23,7 +23,7 @@ Israel Hernandez, IAHM-COL, 2015
     </rating>
 
     <flight-model>jsb</flight-model>
-    <aero>Aero/BV138MS</aero>
+    <aero>BV138MS</aero>
 
     <!-- Splash screen while loading -->
     <startup>
