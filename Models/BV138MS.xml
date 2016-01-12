@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--
+   BV138MS Seedrache
+   Authors: Peter Brendt: Jabberwocky, and Israel Hernandez: IAHM-COL
+   Copyright License:  GPL 3+
+-->
+
+<PropertyList>
+
+  <path>BV138MS.ac</path>
+
+  <offsets>
+    <pitch-deg>0</pitch-deg>
+    <z-m>0</z-m>
+  </offsets>
+
+</PropertyList>
