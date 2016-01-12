@@ -1,18 +1,94 @@
 <?xml version="1.0"?>
 
 <!--
-   BV138MS Seedrache
-   Authors: Peter Brendt: Jabberwocky, and Israel Hernandez: IAHM-COL
-   Copyright License:  GPL 3+
+BV138MS Seedrache
+Authors: Peter Brendt: Jabberwocky, and Israel Hernandez: IAHM-COL
+Copyright License:  GPL 3+
 -->
 
 <PropertyList>
 
   <path>BV138MS.ac</path>
-
   <offsets>
-    <pitch-deg>0</pitch-deg>
-    <z-m>0</z-m>
+    <pitch-deg>2</pitch-deg>
+    <z-m>1.65</z-m>
   </offsets>
+  
+  <!--Livery System-->
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Seedrache/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <name>bodyWork</name>
+    <object-name>bl-aileron.left</object-name>
+    <object-name>bl-aileron.rigth</object-name>
+    <object-name>bl-baj</object-name>
+    <object-name>bl-elevator</object-name>
+    <object-name>bl-flap.left</object-name>
+    <object-name>bl-flap.right</object-name>
+    <object-name>bl-fuselage</object-name>
+    <object-name>bl-hcab</object-name>
+    <object-name>bl-horizontalStabilizer</object-name>
+    <object-name>bl-int</object-name>
+    <object-name>bl-marc</object-name>
+    <object-name>bl-marc1</object-name>
+    <object-name>bl-marc2</object-name>
+    <object-name>bl-pie1</object-name>
+    <object-name>bl-pie1.001</object-name>
+    <object-name>bl-piez</object-name>
+    <object-name>bl-piez2</object-name>
+    <object-name>bl-rudder.left</object-name>
+    <object-name>bl-rudder.right</object-name>
+    <object-name>bl-slat.left</object-name>
+    <object-name>bl-slat.right</object-name>
+    <object-name>bl-sop0</object-name>
+    <object-name>bl-tap</object-name>
+    <object-name>bl-torr</object-name>
+    <object-name>bl-wing</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>bodyWork</object-name>
+    <property-base>sim/model/livery/bodyWork</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>BV138MS.png</texture>
+  </animation>
+
+  <!-- Shaders -->
+  <effect>
+    <inherits-from>Effects/BV138MS-combShaders</inherits-from>
+    <object-name>bl-aileron.left</object-name>
+    <object-name>bl-aileron.rigth</object-name>
+    <object-name>bl-baj</object-name>
+    <object-name>bl-elevator</object-name>
+    <object-name>bl-flap.left</object-name>
+    <object-name>bl-flap.right</object-name>
+    <object-name>bl-fuselage</object-name>
+    <object-name>bl-hcab</object-name>
+    <object-name>bl-horizontalStabilizer</object-name>
+    <object-name>bl-int</object-name>
+    <object-name>bl-marc</object-name>
+    <object-name>bl-marc1</object-name>
+    <object-name>bl-marc2</object-name>
+    <object-name>bl-pie1</object-name>
+    <object-name>bl-pie1.001</object-name>
+    <object-name>bl-piez</object-name>
+    <object-name>bl-piez2</object-name>
+    <object-name>bl-rudder.left</object-name>
+    <object-name>bl-rudder.right</object-name>
+    <object-name>bl-slat.left</object-name>
+    <object-name>bl-slat.right</object-name>
+    <object-name>bl-sop0</object-name>
+    <object-name>bl-tap</object-name>
+    <object-name>bl-torr</object-name>
+    <object-name>bl-wing</object-name>
+  </effect>
 
 </PropertyList>

@@ -511,7 +511,8 @@
       <contents unit="LBS"> 10 </contents>
     </tank>
   </propulsion>
-  
+
+  <!--
   <system file="init-at-start"/>
   <system file="steady-behaviour"/>
   <system file="crash-detect"/>
@@ -533,7 +534,8 @@
   <system file="propulsion"/>
   <system file="externals"/>
   <system file="instruments"/>
-
+  -->
+  
   <flight_control name="FCS: BV 138MS">
     <channel name="Pitch">
 

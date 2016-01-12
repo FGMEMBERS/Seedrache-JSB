@@ -131,6 +131,9 @@ Israel Hernandez, IAHM-COL, 2015
 	<pitch-offset-deg>0</pitch-offset-deg>
       </config>
     </view>
+
+    <menubar include="Dialogs/Seedrache-menu.xml"/>
+    
   </sim>
 
   <engines>
@@ -161,5 +164,11 @@ Israel Hernandez, IAHM-COL, 2015
       <min-pitch type="float">-3.0</min-pitch>
     </internal>
   </autopilot>
+
+  <nasal>
+    <Seedrache>
+      <file>Aircraft/Seedrache-JSB/Nasal/liveries.nas</file>
+    </Seedrache>
+  </nasal>
   
 </PropertyList>
