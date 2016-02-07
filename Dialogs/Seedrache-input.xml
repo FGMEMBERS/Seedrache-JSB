@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<keyboard>
+
+		<key n="1">
+			<name>Ctrl-A</name>
+			<desc>#### should be AP off</desc>
+			<binding>
+				<command>property-toggle</command>
+				<property>/autopilot/switch-altitude</property>
+			</binding>
+		</key>
+
+		<key n="48">
+			<name>0</name>
+			<desc>Boost0</desc>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[1]/boost-speed</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[2]/boost-speed</property>
+				<value>0</value>
+			</binding>
+		</key>
+
+		<key n="49">
+			<name>1</name>
+			<desc>Boost1</desc>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[1]/boost-speed</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[2]/boost-speed</property>
+				<value>1</value>
+			</binding>
+		</key>
+
+		<key n="50">
+			<name>2</name>
+			<desc>Boost2</desc>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>2</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[1]/boost-speed</property>
+				<value>2</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[2]/boost-speed</property>
+				<value>2</value>
+			</binding>
+		</key>
+
+		<key n="68">
+			<name>D</name>
+			<desc>Close water-door</desc>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/fcs/water-door-cmd-norm</property>
+				<value>0</value>
+			</binding>
+		</key>
+
+		<key n="115">
+			<name>s</name>
+			<desc>Fire Starter on Selected Engine(s)</desc>
+			<binding>
+				<command>nasal</command>
+				<script>controls.startEngine(1)</script>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<value>1</value>
+				<property>/fdm/jsbsim/systems/animations/engine-start</property>
+			</binding>
+			<mod-up>
+				<binding>
+					<command>nasal</command>
+					<script>controls.startEngine(0)</script>
+				</binding>
+				<binding>
+					<command>property-assign</command>
+					<value>0</value>
+					<property>/fdm/jsbsim/systems/animations/engine-start</property>
+				</binding>
+			</mod-up>
+		</key>
+
+		<key n="126">
+			<name>~</name>
+			<desc>Nose Wheel Steering</desc>
+			<binding>
+				<command>property-toggle</command>
+				<property>fdm/jsbsim/gear/NWS/engaged</property>
+				<value>0</value>
+			</binding>
+		</key>
+
+	</keyboard>
+
+
+</PropertyList>
