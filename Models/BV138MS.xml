@@ -61,6 +61,84 @@ Copyright License:  GPL 3+
 		<texture>BV138MS.png</texture>
 	</animation>
 
+	<!-- Ailerons -->
+	<animation>
+		<type>rotate</type>
+		<object-name>bl-aileron.left</object-name>
+		<property>surface-positions/left-aileron-pos-norm</property>
+		<factor> 20 </factor>
+		<axis>
+			<x1-m>  5.02388 </x1-m>
+			<y1-m> -24.01695 </y1-m>
+			<z1-m>  0.85828 </z1-m>
+			<x2-m>  5.87454 </x2-m>
+			<y2-m> -12.22580 </y2-m>
+			<z2-m>  1.28589 </z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>bl-aileron.rigth</object-name>
+		<property>surface-positions/right-aileron-pos-norm</property>
+		<factor> 20 </factor>
+		<axis>
+			<x1-m>  5.87454 </x1-m>
+			<y1-m> 12.22580 </y1-m>
+			<z1-m>  1.28589 </z1-m>
+			<x2-m>  5.02388 </x2-m>
+			<y2-m> 24.01695 </y2-m>
+			<z2-m>  0.85828 </z2-m>
+		</axis>
+	</animation>
+
+	<!-- Rudders -->
+	<animation>
+		<type>rotate</type>
+		<object-name>bl-rudder.left</object-name>
+		<property>surface-positions/rudder-pos-norm</property>
+		<factor> 15 </factor>
+		<axis>
+			<x1-m> 14.90703 </x1-m>
+			<y1-m> -4.44007 </y1-m>
+			<z1-m>  0.65895 </z1-m>
+			<x2-m> 14.83177 </x2-m>
+			<y2-m> -4.12030 </y2-m>
+			<z2-m>  3.81204 </z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>bl-rudder.right</object-name>
+		<property>surface-positions/rudder-pos-norm</property>
+		<factor> 15 </factor>
+		<axis>
+			<x1-m> 14.90703 </x1-m>
+			<y1-m>  4.44007 </y1-m>
+			<z1-m>  0.65895 </z1-m>
+			<x2-m> 14.83177 </x2-m>
+			<y2-m>  4.12030 </y2-m>
+			<z2-m>  3.81204 </z2-m>
+		</axis>
+	</animation>
+
+	<!-- Elevator -->
+	<animation>
+		<type>rotate</type>
+		<object-name>bl-elevator</object-name>
+		<property>surface-positions/elevator-pos-norm</property>
+		<factor> 15 </factor>
+		<axis>
+			<x1-m> 14,48947 </x1-m>
+			<y1-m> -7.06694 </y1-m>
+			<z1-m>  2.04888 </z1-m>
+			<x2-m> 14.48947 </x2-m>
+			<y2-m>  7.06694 </y2-m>
+			<z2-m>  2.04888 </z2-m>
+		</axis>
+	</animation>
+
 	<!-- Flaps -->
 	<animation>
 		<type>rotate</type>

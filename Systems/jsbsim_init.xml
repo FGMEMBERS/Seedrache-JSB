@@ -22,7 +22,6 @@
                 </systems>
 
 		<fcs>
-			<!--<brake-parking-cmd-norm type='bool'>true</brake-parking-cmd-norm>-->
 			<brake-parking-cmd-norm alias="/controls/gear/brake-parking"/>
 		</fcs>
 
@@ -38,6 +37,12 @@
 				<magnetos alias="/controls/engines/engine[1]/magnetos"/>
 				<throttle  alias="/controls/engines/engine[1]/throttle"/>
 				<propeller-pitch-ctl  alias="/controls/engines/engine[1]/propeller-pitch"/>
+			</engine>
+			<engine n='2'>
+				<starter alias="/controls/engines/engine[2]/starter"/>
+				<magnetos alias="/controls/engines/engine[2]/magnetos"/>
+				<throttle  alias="/controls/engines/engine[2]/throttle"/>
+				<propeller-pitch-ctl  alias="/controls/engines/engine[2]/propeller-pitch"/>
 			</engine>
 		</propulsion>
 
@@ -80,6 +85,5 @@
 	electrical/outputs/fuel-pump
 	electrical/outputs/cabin-lights
 	-->
-
 
 </PropertyList>

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
-
-    <system name="initialization_at_start">
+<system name="initialization_at_start">
 	 
 	<property value="1">systems/payload/pilot-on</property>
 	<property value="0">systems/payload/copilot-on</property>
@@ -13,10 +12,7 @@
 	
 	<property value="0">instruments/heading-indicator/switch-tacan-dme</property>
 	<property value="0">instruments/heading-indicator/switch-nav-adf</property>
-	<property value="0">instruments/heading-indicator/nav-switch</property>
-	
-	
-	
+	<property value="0">instruments/heading-indicator/nav-switch</property>	
 	
 	<property value="0">electrical/switch/master</property>
 	<property value="0.9">electrical/lighting/instruments-norm</property>
@@ -26,12 +22,9 @@
 	<property value="1">electrical/lighting/strobe-lights</property>
 	<property value="1">electrical/lighting/nav-lights</property>
 	<property value="1">electrical/lighting/position-lights</property>
-	
 	    
 	<channel name="initialization_at_start">
-	    
-	    
-	    
+	    <!-- empty channel, this is only for initializing variables -->	    
 	</channel>
 
-    </system>
+</system>

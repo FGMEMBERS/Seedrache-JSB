@@ -20,7 +20,7 @@
 		<vtailarea unit="FT2"> 160 </vtailarea>
 		<vtailarm unit="FT"> 38.2</vtailarm>
 		<location name="AERORP" unit="IN">
-			<x>3.866 </x>
+			<x> 15.866 </x>
 			<y> 0 </y>
 			<z> 81.851181</z>
 		</location>
@@ -32,7 +32,7 @@
 		<location name="VRP" unit="IN">
 			<x> 0 </x>
 			<y> 0 </y>
-			<z> 0 </z>
+			<z> -80 </z>
 		</location>
 	</metrics>
 
@@ -45,7 +45,7 @@
 		<iyz unit="SLUG*FT2"> 0 </iyz>
 		<emptywt unit="LBS">25950</emptywt>
 		<location name="CG" unit="IN">
-			<x> 3.2 </x>
+			<x> 15.2 </x>
 			<y> 0 </y>
 			<z> 11 </z>
 		</location>
@@ -441,16 +441,15 @@
 		<!-- Tank number 0 -->
 		<tank type="FUEL">
 			<location unit="IN">
-				<x> 0 </x>
+				<x> 15 </x>
 				<y> 0 </y>
-				<z> 64.85</z>
+				<z> 34.85</z>
 			</location>
 			<capacity unit="LBS"> 6600.00 </capacity>
 			<contents unit="LBS"> 6600.00 </contents>
 		</tank>
 
 	</propulsion>
-
       
 	<system file="init-at-start"/>
 	<system file="steady-behaviour"/>
@@ -646,6 +645,7 @@
 			<gain>57.29578</gain>
 			<output>aero/alpha-wing-deg</output>
 		</pure_gain>
+
 	</channel>
 
 </flight_control>
