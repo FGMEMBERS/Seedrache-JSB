@@ -17,7 +17,7 @@ Copyright License:  GPL 3+
 	<!--Livery System-->
 	<nasal>
 		<load>
-			var livery_update = aircraft.livery_update.new("Aircraft/Seedrache/Models/Liveries", 10);
+			var livery_update = aircraft.livery_update.new("Aircraft/Seedrache-JSB/Models/Liveries", 10);
 		</load>
 		<unload>
 			livery_update.stop();
